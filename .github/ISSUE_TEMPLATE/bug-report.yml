@@ -1,0 +1,45 @@
+name: 问题反馈
+description: 铭牌没挂上、挂错位置、面板异常、导入失败等
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        反馈前先自查三件事：① 刷新页面（或按 F5 后来回切一次页面）；②「⋯ → 显示范围」里这个页面类型是开着的；③ 脚本版本是最新的。
+
+  - type: input
+    id: version
+    attributes:
+      label: 脚本版本
+      description: 面板右上角或 Tampermonkey 里能看到
+      placeholder: 1.4.0
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: 出问题的页面
+      placeholder: https://www.bilibili.com/video/BV...
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: 现象
+      description: 期望看到什么、实际看到什么；能附图更好
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: 控制台信息（可选）
+      description: F12 → Console，贴 `__bnp.pageKind` 和 `__bnp.targets` 的输出
+      placeholder: |
+        __bnp.pageKind
+        __bnp.targets
+    validations:
+      required: false

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 使用说明（README）
+    url: https://github.com/kuru7m1/bili-up-nameplate#readme
+    about: 安装、分组、导入导出、显示范围，都写在 README 里

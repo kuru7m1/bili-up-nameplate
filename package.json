@@ -1,0 +1,21 @@
+{
+  "name": "bili-up-nameplate",
+  "version": "1.3.2",
+  "private": true,
+  "description": "B站 UP 分组铭牌 —— 给任意 UP 主挂上自定义分组铭牌，纯本地存储",
+  "type": "module",
+  "license": "MIT",
+  "author": "kuru7m1",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:bump": "node scripts/build.mjs --bump",
+    "test": "node test/harness.mjs",
+    "test:live": "node test/live.mjs",
+    "roster": "node scripts/gen-defaults.mjs",
+    "fill": "node scripts/fill-moe.mjs",
+    "fill:faces": "node scripts/fill-faces.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

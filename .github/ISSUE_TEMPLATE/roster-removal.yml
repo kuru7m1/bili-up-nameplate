@@ -1,0 +1,39 @@
+name: 内置名单移除 / 更正
+description: 如果你是内置示例名单里的 UP，希望被移除或更正信息，用这个模板
+title: "[名单] "
+labels: [roster]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        内置名单只是示例数据：昵称、头像、粉丝数取自 B 站公开接口，可能过期或不准确，也不代表任何官方归属关系。
+
+        提交后我会从 `src/defaults.json` 里删除或更正，随下一版本构建生效。**已经导入过的浏览器里那份副本是本地数据，脚本没有远程删除能力**，需要你自己在面板里把那一行删掉。
+
+  - type: input
+    id: uid
+    attributes:
+      label: UID 或主页链接
+      placeholder: 例如 space.bilibili.com/186463 或 186463
+    validations:
+      required: true
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: 希望怎么处理
+      options:
+        - 从内置名单里移除
+        - 更正昵称 / 头像 / 粉丝数
+        - 更正所属分组
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: 补充说明
+      description: 需要更正的话写清楚正确信息；不方便公开说明，只写「请移除」也可以
+      placeholder: 可选
+    validations:
+      required: false

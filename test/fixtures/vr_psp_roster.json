@@ -1,0 +1,776 @@
+{
+  "generatedAt": "2026-10-28 11:00",
+  "sources": {
+    "VirtuaReal": "https://vrp.live/api/members/search/list?locale=zh_CN&size=1000 (官方成员接口)",
+    "PSPLive": "https://psplive.com/static/js/homepage-config.js (官网旗下艺人配置)",
+    "followers": "https://api.bilibili.com/x/web-interface/card (B站公开接口，实时)"
+  },
+  "groups": {
+    "VirtuaReal": {
+      "source": "https://vrp.live/api/members/search/list?locale=zh_CN&size=1000 (官方成员接口)",
+      "members": [
+        {
+          "name": "向阳",
+          "nameEn": "Hihi",
+          "biliName": "向阳Hihi",
+          "uid": 1694351351,
+          "followers": 16765,
+          "roomId": 31368680,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "帕可",
+          "nameEn": "Pako",
+          "biliName": "帕可Pako",
+          "uid": 1978590132,
+          "followers": 33025,
+          "roomId": 31368686,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "米汀",
+          "nameEn": "Nagisa",
+          "biliName": "米汀Nagisa",
+          "uid": 2124647716,
+          "followers": 80974,
+          "roomId": 31368705,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "雪烛",
+          "nameEn": "Yukisyo",
+          "biliName": "雪烛Yukisyo",
+          "uid": 2039332008,
+          "followers": 51118,
+          "roomId": 31368697,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "入福步",
+          "nameEn": "Ayumi",
+          "biliName": "入福步Ayumi",
+          "uid": 1297910179,
+          "followers": 10330,
+          "roomId": 30655179,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "蜜言",
+          "nameEn": "Mikoto",
+          "biliName": "蜜言Mikoto",
+          "uid": 1609795310,
+          "followers": 63861,
+          "roomId": 30655198,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "漆羽",
+          "nameEn": "Urushiha",
+          "biliName": "漆羽Urushiha",
+          "uid": 2057377595,
+          "followers": 12260,
+          "roomId": 30655213,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "弥月",
+          "nameEn": "Mizuki",
+          "biliName": "弥月Mizuki",
+          "uid": 1789460279,
+          "followers": 53643,
+          "roomId": 30655190,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "晴一",
+          "nameEn": "Hajime",
+          "biliName": "晴一Hajime",
+          "uid": 1616183604,
+          "followers": 9154,
+          "roomId": 30655203,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "离枝",
+          "nameEn": "Richi",
+          "biliName": "离枝Richi",
+          "uid": 2080519347,
+          "followers": 6681,
+          "roomId": 30655172,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "初濑",
+          "nameEn": "Hatsuse",
+          "biliName": "初濑Hatsuse",
+          "uid": 1711724633,
+          "followers": 34733,
+          "roomId": 27628009,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "哎小呜",
+          "nameEn": "Awu",
+          "biliName": "哎小呜Awu",
+          "uid": 1567394869,
+          "followers": 79038,
+          "roomId": 27627985,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "雨纪",
+          "nameEn": "Ameki",
+          "biliName": "雨纪_Ameki",
+          "uid": 1932862336,
+          "followers": 76210,
+          "roomId": 27628019,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "未知夜",
+          "nameEn": "Michiya",
+          "biliName": "未知夜Michiya",
+          "uid": 1296515170,
+          "followers": 44612,
+          "roomId": 27628030,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "伊舞",
+          "nameEn": "Eve",
+          "biliName": "伊舞Eve",
+          "uid": 1542516095,
+          "followers": 20654,
+          "roomId": 26966452,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "栞栞",
+          "nameEn": "Shiori",
+          "biliName": "栞栞Shiori",
+          "uid": 1609526545,
+          "followers": 102895,
+          "roomId": 26966466,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "欧珀",
+          "nameEn": "Opal",
+          "biliName": "欧珀Opal",
+          "uid": 1827139579,
+          "followers": 15429,
+          "roomId": 25762103,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "岁己",
+          "nameEn": "SUI",
+          "biliName": "岁己SUI",
+          "uid": 1954091502,
+          "followers": 68872,
+          "roomId": 25788785,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "江乱",
+          "nameEn": "Era",
+          "biliName": "江乱Era",
+          "uid": 1739085910,
+          "followers": 66428,
+          "roomId": 25788830,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "莱恩",
+          "nameEn": "Leo",
+          "biliName": "莱恩Leo",
+          "uid": 1116072703,
+          "followers": 135891,
+          "roomId": 25788858,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "雾深",
+          "nameEn": "Girimi",
+          "biliName": "雾深Girimi",
+          "uid": 1484169431,
+          "followers": 135793,
+          "roomId": 23805029,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "希侑",
+          "nameEn": "Kiyuu",
+          "biliName": "希侑Kiyuu",
+          "uid": 1155425566,
+          "followers": 74220,
+          "roomId": 23805066,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "狩砂",
+          "nameEn": "Karisa",
+          "biliName": "狩砂Karisa",
+          "uid": 690608714,
+          "followers": 41328,
+          "roomId": 23805078,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "希维",
+          "nameEn": "Sybil",
+          "biliName": "希维Sybil",
+          "uid": 1405589619,
+          "followers": 40244,
+          "roomId": 23805059,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "克克",
+          "nameEn": "Keke",
+          "biliName": "克克_Keke",
+          "uid": 690608711,
+          "followers": 11964,
+          "roomId": 23550784,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "友夏",
+          "nameEn": "Uka",
+          "biliName": "友夏Uka",
+          "uid": 690608712,
+          "followers": 32161,
+          "roomId": 23550793,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "尤格",
+          "nameEn": "Yog",
+          "biliName": "尤格Yog",
+          "uid": 690608709,
+          "followers": 183317,
+          "roomId": 23550749,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "暴食",
+          "nameEn": "Hunger",
+          "biliName": "暴食Hunger",
+          "uid": 690608710,
+          "followers": 30327,
+          "roomId": 23550773,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "夜宫",
+          "nameEn": "Yomiya",
+          "biliName": "夜宫Yomiya",
+          "uid": 690608689,
+          "followers": 42559,
+          "roomId": 23260856,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "库伽",
+          "nameEn": "Hakuja",
+          "biliName": "库伽Hakuja",
+          "uid": 690608695,
+          "followers": 52493,
+          "roomId": 23260979,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "瑞娅",
+          "nameEn": "Rhea",
+          "biliName": "瑞娅_Rhea",
+          "uid": 690608698,
+          "followers": 94677,
+          "roomId": 23260993,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "轴伊",
+          "nameEn": "Joi",
+          "biliName": "轴伊Joi_Channel",
+          "uid": 61639371,
+          "followers": 138966,
+          "roomId": 21484828,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "桃星",
+          "nameEn": "Tocci",
+          "biliName": "桃星Tocci",
+          "uid": 690608704,
+          "followers": 210559,
+          "roomId": 23017349,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "吉吉",
+          "nameEn": "kiti",
+          "biliName": "吉吉Kiti",
+          "uid": 690608688,
+          "followers": 39734,
+          "roomId": 23017343,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "诺莺",
+          "nameEn": "Nox",
+          "biliName": "诺莺Nox",
+          "uid": 529249,
+          "followers": 163198,
+          "roomId": 282208,
+          "sub": "VirtuaReal Link"
+        },
+        {
+          "name": "糯依",
+          "nameEn": "Noi",
+          "biliName": "糯依Noi",
+          "uid": 176836079,
+          "followers": 21718,
+          "roomId": 6068126,
+          "sub": "VirtuaReal Link"
+        },
+        {
+          "name": "舒三妈",
+          "nameEn": "Susam",
+          "biliName": "舒三妈Susam",
+          "uid": 6853766,
+          "followers": 294705,
+          "roomId": 3032130,
+          "sub": "VirtuaReal Link"
+        },
+        {
+          "name": "九十九",
+          "nameEn": "TSUKUMO",
+          "biliName": "九十九_Tsukumo",
+          "uid": 690608702,
+          "followers": 45378,
+          "roomId": 22778627,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "蕾米",
+          "nameEn": "Remi",
+          "biliName": "蕾米Remi",
+          "uid": 690608687,
+          "followers": 100838,
+          "roomId": 22778596,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "勾檀",
+          "nameEn": "Mayumi",
+          "biliName": "勾檀Mayumi",
+          "uid": 690608693,
+          "followers": 259784,
+          "roomId": 22778610,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "阿梓",
+          "nameEn": "Azusa",
+          "biliName": "阿梓从小就很可爱",
+          "uid": 7706705,
+          "followers": 1173080,
+          "roomId": 510,
+          "sub": "VirtuaReal Link"
+        },
+        {
+          "name": "宫园凛",
+          "nameEn": "RinMiyazono",
+          "biliName": "宫园凛RinMiyazono",
+          "uid": 12485637,
+          "followers": 27792,
+          "roomId": 784734,
+          "sub": "VirtuaReal Link"
+        },
+        {
+          "name": "小可学妹",
+          "nameEn": "Kero",
+          "biliName": "小可学妹",
+          "uid": 14387072,
+          "followers": 541929,
+          "roomId": 6374209,
+          "sub": "VirtuaReal Link"
+        },
+        {
+          "name": "憨色儿",
+          "nameEn": "hanser",
+          "biliName": "hanser",
+          "uid": 11073,
+          "followers": 5130980,
+          "roomId": 48743,
+          "sub": "VirtuaReal Star"
+        },
+        {
+          "name": "千幽",
+          "nameEn": "Chiyuu",
+          "biliName": "千幽Chiyuu",
+          "uid": 690608691,
+          "followers": 59443,
+          "roomId": 22605464,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "悠亚",
+          "nameEn": "Yua",
+          "biliName": "悠亚Yua",
+          "uid": 666726799,
+          "followers": 108200,
+          "roomId": 22470216,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "勺",
+          "nameEn": "Shaun",
+          "biliName": "勺Shaun",
+          "uid": 666726801,
+          "followers": 311337,
+          "roomId": 22470208,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "若月千春",
+          "nameEn": "wakatsuki chiharu",
+          "biliName": "千春_Chiharu",
+          "uid": 558070433,
+          "followers": 103034,
+          "roomId": 22389319,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "祖娅纳惜",
+          "nameEn": "Aria",
+          "biliName": "祖娅纳惜",
+          "uid": 3046429,
+          "followers": 2307219,
+          "roomId": 938957,
+          "sub": "VirtuaReal Star"
+        },
+        {
+          "name": "菜菜子",
+          "nameEn": "Nanako",
+          "biliName": "菜菜子Nanako",
+          "uid": 595407557,
+          "followers": 2170887,
+          "roomId": 22359795,
+          "sub": "VirtuaReal Star"
+        },
+        {
+          "name": "沙夜",
+          "nameEn": "Saya",
+          "biliName": "沙夜_Saya",
+          "uid": 490331391,
+          "followers": 45306,
+          "roomId": 21763344,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "桃濑雪绘",
+          "nameEn": "MOMOSE YUKIE",
+          "biliName": "雪绘Yukie",
+          "uid": 56748733,
+          "followers": 456306,
+          "roomId": 21756924,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "魔魔マラ",
+          "nameEn": "MamaMara",
+          "biliName": "魔魔マラ",
+          "uid": 322210278,
+          "followers": 15603,
+          "roomId": 21736138,
+          "sub": "VirtuaReal Link"
+        },
+        {
+          "name": "阿萨",
+          "nameEn": "Aza",
+          "biliName": "阿萨Aza",
+          "uid": 480680646,
+          "followers": 1757262,
+          "roomId": 21696950,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "八木迪之",
+          "nameEn": "Yagi Michiyuki",
+          "biliName": "八木迪之",
+          "uid": 480675481,
+          "followers": 49763,
+          "roomId": 21696929,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "度人",
+          "nameEn": "Tabibito",
+          "biliName": "度人Tabibito",
+          "uid": 474369808,
+          "followers": 66554,
+          "roomId": 21696957,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "弥希",
+          "nameEn": "Miki",
+          "biliName": "弥希Miki",
+          "uid": 477317922,
+          "followers": 147021,
+          "roomId": 21672023,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "蜜球兔",
+          "nameEn": "Mitsusa",
+          "biliName": "蜜球兔",
+          "uid": 1750561,
+          "followers": 93519,
+          "roomId": 8721033,
+          "sub": "VirtuaReal Link"
+        },
+        {
+          "name": "樱樱火",
+          "nameEn": "Sakura Haruka",
+          "biliName": "樱樱火Official",
+          "uid": 474113504,
+          "followers": 23182,
+          "roomId": null,
+          "sub": "VirtuaReal Star"
+        },
+        {
+          "name": "惑姬",
+          "nameEn": "Waku",
+          "biliName": "惑姬Waku",
+          "uid": 472877684,
+          "followers": 54976,
+          "roomId": 21613356,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "安堂稻荷",
+          "nameEn": "AndouInari",
+          "biliName": "安堂いなり_official",
+          "uid": 392505232,
+          "followers": 89926,
+          "roomId": 21224291,
+          "sub": "VirtuaReal Link"
+        },
+        {
+          "name": "中单光一",
+          "nameEn": "Kouichi",
+          "biliName": "中单光一",
+          "uid": 434401868,
+          "followers": 116530,
+          "roomId": 21457197,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "七海",
+          "nameEn": "Nanami",
+          "biliName": "七海Nana7mi",
+          "uid": 434334701,
+          "followers": 1117505,
+          "roomId": 21452505,
+          "sub": "VirtuaReal Project"
+        },
+        {
+          "name": "艾因",
+          "nameEn": "Eine",
+          "biliName": "艾因Eine",
+          "uid": 421267475,
+          "followers": 246957,
+          "roomId": 21403601,
+          "sub": "VirtuaReal Project"
+        }
+      ]
+    },
+    "PSPLive": {
+      "source": "https://psplive.com/static/js/homepage-config.js (官网旗下艺人配置)",
+      "members": [
+        {
+          "name": "绫奈奈奈",
+          "nameEn": "Ayana Nana",
+          "biliName": "綾奈奈奈",
+          "uid": 186463,
+          "followers": 197724,
+          "roomId": 337374,
+          "sub": ""
+        },
+        {
+          "name": "这是亦枝YY",
+          "nameEn": "YY",
+          "biliName": "这是亦枝YY",
+          "uid": 147471,
+          "followers": 37316,
+          "roomId": 10317,
+          "sub": ""
+        },
+        {
+          "name": "白神遥",
+          "nameEn": "Shirakami Haruka",
+          "biliName": "白神遥Haruka",
+          "uid": 477332594,
+          "followers": 789308,
+          "roomId": 21652717,
+          "sub": ""
+        },
+        {
+          "name": "秋凛子",
+          "nameEn": "Aki Rinco",
+          "biliName": "秋凛子Rinco",
+          "uid": 479633069,
+          "followers": 132919,
+          "roomId": 21677969,
+          "sub": ""
+        },
+        {
+          "name": "东爱璃",
+          "nameEn": "Agari Lovely",
+          "biliName": "东爱璃Lovely",
+          "uid": 3821157,
+          "followers": 352353,
+          "roomId": 21692711,
+          "sub": ""
+        },
+        {
+          "name": "北柚香",
+          "nameEn": "North Yuka",
+          "biliName": "北柚香Yuka",
+          "uid": 480248442,
+          "followers": 115862,
+          "roomId": 22381346,
+          "sub": ""
+        },
+        {
+          "name": "星汐",
+          "nameEn": "Seki",
+          "biliName": "星汐Seki",
+          "uid": 51030552,
+          "followers": 280719,
+          "roomId": 1603600,
+          "sub": ""
+        },
+        {
+          "name": "笙歌",
+          "nameEn": "Shengge",
+          "biliName": "帅比笙歌超可爱OvO",
+          "uid": 15641218,
+          "followers": 258025,
+          "roomId": 545,
+          "sub": ""
+        },
+        {
+          "name": "病院坂灵",
+          "nameEn": "Rei",
+          "biliName": "病院坂Rei",
+          "uid": 1041474702,
+          "followers": 198226,
+          "roomId": 22953950,
+          "sub": ""
+        },
+        {
+          "name": "李豆沙",
+          "nameEn": "Shadow Lee",
+          "biliName": "李豆沙_Channel",
+          "uid": 1703797642,
+          "followers": 99360,
+          "roomId": 22966160,
+          "sub": ""
+        },
+        {
+          "name": "礼墨",
+          "nameEn": "Sumi",
+          "biliName": "礼墨Sumi",
+          "uid": 435243735,
+          "followers": 196905,
+          "roomId": 23222837,
+          "sub": ""
+        },
+        {
+          "name": "安晚",
+          "nameEn": "Awa",
+          "biliName": "安晚aWa",
+          "uid": 1377219279,
+          "followers": 25051,
+          "roomId": 22775974,
+          "sub": ""
+        },
+        {
+          "name": "露蒂丝",
+          "nameEn": "Rutice",
+          "biliName": "露蒂丝",
+          "uid": 52522,
+          "followers": 74125,
+          "roomId": 850221,
+          "sub": ""
+        },
+        {
+          "name": "尾幼马有利",
+          "nameEn": "Mayori",
+          "biliName": "尾幼mayori",
+          "uid": 88271743,
+          "followers": 81993,
+          "roomId": 25755118,
+          "sub": ""
+        },
+        {
+          "name": "无前",
+          "nameEn": "Namae",
+          "biliName": "无前Namae",
+          "uid": 29080,
+          "followers": 99135,
+          "roomId": 12576972,
+          "sub": ""
+        },
+        {
+          "name": "伊索尔",
+          "nameEn": "Sol",
+          "biliName": "伊索尔Sol",
+          "uid": 1694610556,
+          "followers": 87652,
+          "roomId": 25971921,
+          "sub": ""
+        },
+        {
+          "name": "南町",
+          "nameEn": "Nightin",
+          "biliName": "南町Nightin",
+          "uid": 1329085897,
+          "followers": 96560,
+          "roomId": 24872476,
+          "sub": ""
+        },
+        {
+          "name": "汀汀汀",
+          "nameEn": "TTT",
+          "biliName": "汀汀汀TTT",
+          "uid": 3494349511854939,
+          "followers": 81573,
+          "roomId": 27868433,
+          "sub": ""
+        },
+        {
+          "name": "萱萱卡娅",
+          "nameEn": "Kaya",
+          "biliName": "萱萱卡娅kaya",
+          "uid": 3493126803032322,
+          "followers": 28401,
+          "roomId": 27007780,
+          "sub": ""
+        },
+        {
+          "name": "由菜",
+          "nameEn": "Yuna",
+          "biliName": "由菜Yuna",
+          "uid": 3494364181432853,
+          "followers": 35904,
+          "roomId": 30103697,
+          "sub": ""
+        }
+      ]
+    }
+  }
+}
