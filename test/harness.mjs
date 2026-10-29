@@ -694,7 +694,7 @@ try {
       };
     });
     ok(after.asked, '先弹确认框再动手');
-    ok(after.groups === 7 && after.members === 2579 && after.saved === 7, `确认后导入 7 组 / 2579 人（${after.groups} / ${after.members}）`, after);
+    ok(after.groups === 7 && after.members === 2577 && after.saved === 7, `确认后导入 7 组 / 2577 人（${after.groups} / ${after.members}）`, after);
     ok(!after.empty, '空状态被名单替换掉');
     await page.close();
   }
@@ -722,14 +722,14 @@ try {
         after: Object.keys(window.__bnp.members).length,
       };
     });
-    ok(r.first.created === 7 && r.first.added === 2586, `导入 7 个分组、2586 条记录（${JSON.stringify(r.first)}）`);
+    ok(r.first.created === 7 && r.first.added === 2584, `导入 7 个分组、2584 条记录（${JSON.stringify(r.first)}）`);
     ok(
       r.groups.map((g) => g[0]).join(',') ===
         '测试分组1-VirtuaReal,测试分组2-PSPLive,测试分组3-Providence,测试分组4-Aurora,测试分组5-Fairy,测试分组6,测试分组7',
       `分组名与顺序正确（${r.groups.map((g) => g[0]).join('、')}）`
     );
     ok(
-      r.groups.map((g) => g[1]).join(',') === '74,26,20,17,53,2395,1',
+      r.groups.map((g) => g[1]).join(',') === '74,26,20,17,51,2395,1',
       `各组人数正确（${r.groups.map((g) => g[1]).join('/')}）`
     );
     ok(
@@ -740,10 +740,10 @@ try {
       r.on.map((x) => (x ? '1' : '0')).join('') === '1111101',
       `只有「测试分组6」导入后默认不显示（${r.on.map((x) => (x ? 'on' : 'off')).join('/')}）`
     );
-    ok(r.total === 2579, `共 2579 位 UP，含跨组重复 7 人（${r.total}）`);
+    ok(r.total === 2577, `共 2577 位 UP，含跨组重复 7 人（${r.total}）`);
     ok(r.saved === 7, `导入后 7 个分组已落盘（${r.saved}）`);
-    ok(r.mid === 2578 && r.again.added === 1 && r.back, `删掉一位后再导入只补回他（${JSON.stringify(r.again)}）`);
-    ok(r.third.added === 0 && r.after === 2579, '再点一次不会重复添加', r.third);
+    ok(r.mid === 2576 && r.again.added === 1 && r.back, `删掉一位后再导入只补回他（${JSON.stringify(r.again)}）`);
+    ok(r.third.added === 0 && r.after === 2577, '再点一次不会重复添加', r.third);
 
     await page.evaluate(() => {
       window.__bnp.settings.mode = 'always';
@@ -1093,7 +1093,7 @@ try {
       const saved = Object.values(window.__gm.members || {}).filter((m) => m.f).length;
       return { total: all.length, noFace, saved, sample: window.__bnp.members['1437582453'] && window.__bnp.members['1437582453'].f };
     });
-    ok(r.total === 2579 && r.noFace === 0, `启动后 2579 位都补上了头像地址（共 ${r.total}，缺 ${r.noFace}）`);
+    ok(r.total === 2577 && r.noFace === 0, `启动后 2577 位都补上了头像地址（共 ${r.total}，缺 ${r.noFace}）`);
     ok(r.saved > 0, `补齐结果已落盘（${r.saved} 条有头像）`);
     ok(/^https:\/\/i\d\.hdslb\.com\/bfs\/face\//.test(r.sample || ''), `抽查一条是正确的头像地址（${r.sample}）`);
     await page.close();
@@ -1166,6 +1166,88 @@ try {
     ok(r.want && r.bgVal === r.want, `点一个就填进标记框（${r.bgVal}）`);
     ok(r.chip === r.want && r.stored === r.want, `分组色块与本地数据同步更新（${r.chip} / ${r.stored}）`);
     ok(r.closed, '再点一下收起');
+    await page.close();
+  }
+
+  /* 32. 合并分组 */
+  console.log('\n[32] 合并分组');
+  {
+    const page = await newPage(browser, 'https://t.bilibili.com/');
+    const seedJson = JSON.stringify({
+      groups: [
+        { name: '甲组', badge: '🅰️', text: '甲', color: '#7c5cff', members: [{ uid: 186463, name: '綾奈奈奈' }, { uid: 1694351351, name: '向阳Hihi' }] },
+        { name: '乙组', badge: '🅱️', text: '乙', color: '#ff6b9d', members: [{ uid: 186463, name: '綾奈奈奈' }, { uid: 415297421, name: '小号' }] },
+        { name: '丙组', badge: '🆑', text: '丙', color: '#10b981', members: [{ uid: 415297421, name: '小号' }, { uid: 999000111, name: '路人甲' }] },
+      ],
+    });
+    await page.evaluate((t) => window.__bnp.import(t, 'merge'), seedJson);
+    await page.evaluate(() => window.__bnp.open());
+    await sleep(220);
+
+    const opened = await page.evaluate(async () => {
+      const sr = document.getElementById('bnp-panel-host').shadowRoot;
+      [...sr.querySelectorAll('.bar .btn')].find((b) => b.textContent.trim() === '⋯').click();
+      await new Promise((r) => setTimeout(r, 120));
+      const item = [...sr.querySelectorAll('.menu button')].find((b) => b.textContent.includes('合并分组'));
+      const hasItem = !!item;
+      item.click();
+      await new Promise((r) => setTimeout(r, 160));
+      const sheet = sr.querySelector('.sheet.on');
+      const rows = sheet ? [...sheet.querySelectorAll('.res .row')] : [];
+      const go = sheet.querySelector('.sfoot .btn.pri');
+      rows[0].querySelector('input').click();
+      await new Promise((r) => setTimeout(r, 60));
+      const one = { disabled: go.disabled, status: sheet.querySelector('.status').textContent };
+      rows[1].querySelector('input').click();
+      await new Promise((r) => setTimeout(r, 60));
+      return {
+        hasItem,
+        title: sheet && sheet.querySelector('h3').textContent,
+        rows: rows.length,
+        labels: rows.map((r) => r.querySelector('.n').textContent),
+        one,
+        two: { disabled: go.disabled, status: sheet.querySelector('.status').textContent },
+        name: sheet.querySelector('.fieldrow input').value,
+      };
+    });
+    ok(opened.hasItem, '「⋯」菜单里有「合并分组」入口');
+    ok(opened.title === '合并分组' && opened.rows === 3, `弹出的面板列出 3 个分组（${opened.labels.join('、')}）`);
+    ok(opened.one.disabled && /再选 1 个/.test(opened.one.status), `只选 1 个时不能合并（${opened.one.status}）`);
+    ok(!opened.two.disabled && /去重后共 3 位 UP/.test(opened.two.status), `选 2 个后可合并，并给出并集人数（${opened.two.status}）`);
+    ok(opened.name === '甲组', `名称默认取最靠前的分组（${opened.name}）`);
+    await page.screenshot({ path: path.join(SHOTS, 'merge.png') });
+
+    const after = await page.evaluate(async () => {
+      const sr = document.getElementById('bnp-panel-host').shadowRoot;
+      const sheet = sr.querySelector('.sheet.on');
+      const input = sheet.querySelector('.fieldrow input');
+      input.value = '合并后';
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      sheet.querySelector('.sfoot .btn.pri').click();
+      await new Promise((r) => setTimeout(r, 180));
+      const asked = !!sr.querySelector('.cover.on');
+      sr.querySelector('.cover.on .cbox .danger').click();
+      await new Promise((r) => setTimeout(r, 300));
+      return {
+        asked,
+        groups: window.__bnp.groups.map((g) => g.name),
+        ofA: window.__bnp.groupsOf('186463'),
+        ofB: window.__bnp.groupsOf('415297421'),
+        ofC: window.__bnp.groupsOf('999000111'),
+        total: Object.keys(window.__bnp.members).length,
+        sheetClosed: !sr.querySelector('.sheet.on'),
+        saved: (window.__gm.groups || []).map((g) => g.name),
+        dom: [...sr.querySelectorAll('.grp .nm')].map((e) => e.textContent),
+      };
+    });
+    ok(after.asked, '合并前先弹确认框');
+    ok(after.groups.join(',') === '合并后,丙组', `两个分组合并成一个并改名（${after.groups.join('、')}）`);
+    ok(after.ofA.join(',') === '合并后', `同时在两个组里的人只留一份归属（${after.ofA.join('、')}）`);
+    ok(after.ofB.join(',') === '合并后,丙组', `跨组关系不受影响（${after.ofB.join('、')}）`);
+    ok(after.ofC.join(',') === '丙组', `未参与合并的分组保持原样（${after.ofC.join('、')}）`);
+    ok(after.total === 4, `成员一个都没丢（${after.total} 位）`);
+    ok(after.sheetClosed && after.dom.join(',') === '合并后,丙组', '面板即时刷新并关闭弹层', after.dom);
+    ok(after.saved.join(',') === '合并后,丙组', '新分组结构已写回本地存储', after.saved);
     await page.close();
   }
 

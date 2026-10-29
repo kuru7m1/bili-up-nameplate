@@ -1,6 +1,6 @@
 {
   "name": "bili-up-nameplate",
-  "version": "1.3.2",
+  "version": "1.5.0",
   "private": true,
   "description": "B站 UP 分组铭牌 —— 给任意 UP 主挂上自定义分组铭牌，纯本地存储",
   "type": "module",

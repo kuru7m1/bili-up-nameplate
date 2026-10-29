@@ -2,7 +2,7 @@
 // @name         B站 UP 分组铭牌
 // @name:en      Bilibili UP Group Nameplate
 // @namespace    https://github.com/kuru7m1/bili-up-nameplate
-// @version      1.4.0
+// @version      1.5.0
 // @description  给任意 B 站 UP 主挂上你自己定义的分组铭牌：分组名、浮标颜色、标记全部自定义，名单与设置只存本地，不上传任何数据。
 // @description:en  Attach your own custom group nameplates to any Bilibili uploader. Groups, colors and marks are fully customisable; all data stays local.
 // @icon         data:image/png;base64,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
@@ -464,6 +464,38 @@
     saveGroups();
     bump();
     return true;
+  }
+
+  /**
+   * 合并多个分组：成员取并集，分组顺序 / 标记 / 颜色沿用列表里最靠前的那个，
+   * 其余分组删除；成员在别的分组里的关系不受影响。
+   */
+  function mergeGroups(ids, name) {
+    const want = new Set((ids || []).filter((id) => groupById(id)));
+    if (want.size < 2) return { ok: false, reason: '至少要选两个分组' };
+
+    const ordered = groups.filter((g) => want.has(g.id));
+    const keep = ordered[0];
+    const drop = new Set(ordered.slice(1).map((g) => g.id));
+    let moved = 0;
+
+    for (const m of Object.values(members)) {
+      if (!m.gids.some((g) => drop.has(g))) continue;
+      const next = m.gids.filter((g) => !drop.has(g));
+      if (next.indexOf(keep.id) < 0) next.push(keep.id);
+      m.gids = next;
+      moved++;
+    }
+
+    groups = groups.filter((g) => !drop.has(g.id));
+    for (const id of drop) delete settings.sort[id];
+    if (name && String(name).trim()) keep.name = String(name).trim().slice(0, 40);
+
+    saveGroups();
+    saveSettings();
+    saveMembers();
+    bump();
+    return { ok: true, groups: ordered.length, moved, keep };
   }
 
   /** 用户主动「导入测试分组」：只补不删，同名分组合并，已存在的人跳过 */
@@ -2085,6 +2117,7 @@
       }
     });
     mkItem('⇩ 导入名单…', () => openSheet('import'));
+    mkItem('⇄ 合并分组…', () => openSheet('merge'));
     mkItem('⇩ 导入测试分组', async () => {
       const ok = await confirmBox(
         '导入测试分组？测试分组仅作示范，可随意修改或删除；已存在同名分组的会合并到原分组，已收录的 UP 会跳过，不会覆盖你的改动。',
@@ -3205,6 +3238,7 @@
     sheetEl.textContent = '';
     sheetEl.classList.add('on');
     if (kind === 'import') buildImportSheet();
+    else if (kind === 'merge') buildMergeSheet();
     else buildAddSheet(opts);
   }
 
@@ -3748,6 +3782,126 @@
     closeBtn.addEventListener('click', closeSheet);
     sfoot.appendChild(closeBtn);
     setTimeout(() => drop.focus(), 20);
+  }
+
+  /** 合并分组：勾选多个分组，成员取并集，可重命名，其余分组删除 */
+  function buildMergeSheet() {
+    const head = el('div', 'sh');
+    head.appendChild(el('h3', '', '合并分组'));
+    const x = el('button', 'x', '✕');
+    x.addEventListener('click', closeSheet);
+    head.appendChild(x);
+    sheetEl.appendChild(head);
+
+    const body = el('div', 'sb');
+    sheetEl.appendChild(body);
+    body.appendChild(
+      el(
+        'p',
+        'hint',
+        '勾选两个或以上的分组。合并后成员取并集；分组顺序、标记与颜色沿用列表里最靠前的那个，其余分组删除，成员不会丢。'
+      )
+    );
+
+    const list = el('div', 'res');
+    body.appendChild(list);
+
+    const nameRow = el('div', 'fieldrow');
+    nameRow.style.marginTop = '12px';
+    nameRow.appendChild(el('span', '', '合并后名称'));
+    const nameIn = document.createElement('input');
+    nameIn.type = 'text';
+    nameIn.maxLength = 40;
+    nameRow.appendChild(nameIn);
+    body.appendChild(nameRow);
+
+    const st = el('div', 'status');
+    body.appendChild(st);
+
+    const foot = el('div', 'sfoot');
+    foot.appendChild(el('span', 'sp'));
+    const cancel = el('button', 'btn', '取消');
+    cancel.addEventListener('click', closeSheet);
+    const go = el('button', 'btn pri', '合并');
+    go.disabled = true;
+    foot.appendChild(cancel);
+    foot.appendChild(go);
+    sheetEl.appendChild(foot);
+
+    const picked = new Set();
+    let nameDirty = false;
+
+    const unionCount = () => {
+      const seen = new Set();
+      for (const g of groups) {
+        if (!picked.has(g.id)) continue;
+        for (const [uid] of membersOf(g.id)) seen.add(uid);
+      }
+      return seen.size;
+    };
+
+    const sync = () => {
+      const n = picked.size;
+      const first = groups.find((g) => picked.has(g.id));
+      if (!nameDirty) nameIn.value = first ? first.name : '';
+      nameIn.placeholder = first ? first.name : '留空则沿用第一个分组的名称';
+      go.disabled = n < 2;
+      st.className = 'status';
+      st.textContent =
+        n < 2 ? `已选 ${n} 个，再选 ${2 - n} 个即可合并` : `将合并 ${n} 个分组，去重后共 ${unionCount()} 位 UP`;
+    };
+
+    for (const g of groups) {
+      const row = el('label', 'row');
+      row.style.cursor = 'pointer';
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      row.appendChild(cb);
+      const chip = el('span', 'chip');
+      const b = badgeOf(g);
+      chip.style.background = b.color;
+      chip.textContent = b.mark || b.text.slice(0, 2);
+      row.appendChild(chip);
+      row.appendChild(el('span', 'n', g.name));
+      row.appendChild(el('span', 'sp'));
+      row.appendChild(el('span', 'f', `${membersOf(g.id).length} 人`));
+      cb.addEventListener('change', () => {
+        if (cb.checked) picked.add(g.id);
+        else picked.delete(g.id);
+        sync();
+      });
+      list.appendChild(row);
+    }
+
+    nameIn.addEventListener('input', () => {
+      nameDirty = true;
+    });
+
+    go.addEventListener('click', async () => {
+      const ids = [...picked];
+      const first = groups.find((g) => picked.has(g.id));
+      const finalName = (nameIn.value.trim() || (first && first.name) || '合并分组').slice(0, 40);
+      const ok = await confirmBox(
+        `把 ${ids.length} 个分组合并为「${finalName}」？其余 ${
+          ids.length - 1
+        } 个分组会被删除，成员全部保留，也不影响他们在别的分组里的归属。`,
+        '合并'
+      );
+      if (!ok) return;
+      const r = mergeGroups(ids, finalName);
+      if (!r.ok) {
+        toast(r.reason, true);
+        return;
+      }
+      for (const id of ids) if (id !== r.keep.id) view.open.delete(id);
+      closeSheet();
+      renderBody();
+      refreshMeta();
+      scanPage();
+      toast(`已合并 ${r.groups} 个分组，${r.moved} 位 UP 的分组关系已归并`);
+    });
+
+    sync();
   }
 
   /* ============================================================
