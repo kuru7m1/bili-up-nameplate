@@ -694,7 +694,7 @@ try {
       };
     });
     ok(after.asked, '先弹确认框再动手');
-    ok(after.groups === 7 && after.members === 2542 && after.saved === 7, `确认后导入 7 组 / 2542 人（${after.groups} / ${after.members}）`, after);
+    ok(after.groups === 7 && after.members === 2579 && after.saved === 7, `确认后导入 7 组 / 2579 人（${after.groups} / ${after.members}）`, after);
     ok(!after.empty, '空状态被名单替换掉');
     await page.close();
   }
@@ -722,14 +722,14 @@ try {
         after: Object.keys(window.__bnp.members).length,
       };
     });
-    ok(r.first.created === 7 && r.first.added === 2549, `导入 7 个分组、2549 条记录（${JSON.stringify(r.first)}）`);
+    ok(r.first.created === 7 && r.first.added === 2586, `导入 7 个分组、2586 条记录（${JSON.stringify(r.first)}）`);
     ok(
       r.groups.map((g) => g[0]).join(',') ===
         '测试分组1-VirtuaReal,测试分组2-PSPLive,测试分组3-Providence,测试分组4-Aurora,测试分组5-Fairy,测试分组6,测试分组7',
       `分组名与顺序正确（${r.groups.map((g) => g[0]).join('、')}）`
     );
     ok(
-      r.groups.map((g) => g[1]).join(',') === '74,26,20,17,16,2395,1',
+      r.groups.map((g) => g[1]).join(',') === '74,26,20,17,53,2395,1',
       `各组人数正确（${r.groups.map((g) => g[1]).join('/')}）`
     );
     ok(
@@ -740,10 +740,10 @@ try {
       r.on.map((x) => (x ? '1' : '0')).join('') === '1111101',
       `只有「测试分组6」导入后默认不显示（${r.on.map((x) => (x ? 'on' : 'off')).join('/')}）`
     );
-    ok(r.total === 2542, `共 2542 位 UP，含跨组重复 7 人（${r.total}）`);
+    ok(r.total === 2579, `共 2579 位 UP，含跨组重复 7 人（${r.total}）`);
     ok(r.saved === 7, `导入后 7 个分组已落盘（${r.saved}）`);
-    ok(r.mid === 2541 && r.again.added === 1 && r.back, `删掉一位后再导入只补回他（${JSON.stringify(r.again)}）`);
-    ok(r.third.added === 0 && r.after === 2542, '再点一次不会重复添加', r.third);
+    ok(r.mid === 2578 && r.again.added === 1 && r.back, `删掉一位后再导入只补回他（${JSON.stringify(r.again)}）`);
+    ok(r.third.added === 0 && r.after === 2579, '再点一次不会重复添加', r.third);
 
     await page.evaluate(() => {
       window.__bnp.settings.mode = 'always';
@@ -1093,7 +1093,7 @@ try {
       const saved = Object.values(window.__gm.members || {}).filter((m) => m.f).length;
       return { total: all.length, noFace, saved, sample: window.__bnp.members['1437582453'] && window.__bnp.members['1437582453'].f };
     });
-    ok(r.total === 2542 && r.noFace === 0, `启动后 2542 位都补上了头像地址（共 ${r.total}，缺 ${r.noFace}）`);
+    ok(r.total === 2579 && r.noFace === 0, `启动后 2579 位都补上了头像地址（共 ${r.total}，缺 ${r.noFace}）`);
     ok(r.saved > 0, `补齐结果已落盘（${r.saved} 条有头像）`);
     ok(/^https:\/\/i\d\.hdslb\.com\/bfs\/face\//.test(r.sample || ''), `抽查一条是正确的头像地址（${r.sample}）`);
     await page.close();
